@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = wall
+CFLAGS = -wall
 
 all: hello_world
 
