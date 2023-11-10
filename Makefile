@@ -1,8 +1,10 @@
-prog; hello.o mult.o
-	gcc -o prog hello.o mult.o
+CC = gcc
+CFLAGS = wall
 
-hello.o: hello.c
-	gcc -o hello.o -c hello.c
+all: hello_world
 
-mult.o: mult.c
-	gcc -o mult.o -c mult.c
+hello_world: hello_world.c
+    gcc -o hello_world hello_world.c
+
+clean:
+    rm -f hello_world
